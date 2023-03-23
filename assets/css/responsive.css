@@ -15,6 +15,9 @@ body a{
 .footer-location-links {
     font-size: 12px;
 }
+.serv-card p {
+    font-size: 10px;
+}
 }
 
 
@@ -79,13 +82,23 @@ body a{
     .serv-card p {
         font-size: 16px;
     }
-    .freq-head {
-        flex-direction: column;
+    .freq-head, .articles-head {
+        display: inherit;;
         align-items: start;
         justify-content: start;
     }
-    .freq-head input{
+    .freq-head input, .articles-head input{
         width: 100%;
     }
+    .copy-right h6 {
+        font-size: 12px;
+    }
+    .footer-location-links {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    
+    
+    
 }
 
