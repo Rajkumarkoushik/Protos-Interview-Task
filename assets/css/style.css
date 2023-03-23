@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    scroll-behavior: smooth ;
+}
+ol,ul{
+    list-style: none;
+    padding-left: 0px !important;
+    color: var(--second-color-);
+}
+body p{
+    color: var(--second-color-); 
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+body a{
+    text-decoration: none;
+    color: var(--second-color-);
+    font-size: 15px;
+    font-weight: 500;
+}
+body h3{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+:root{
+    --first-color- : #f16823;
+    --second-color- : #7c868c;
+    --three-color- : #00529f;
+}
+.pt-50{
+    padding-top: 50px;
+}
+.pb-50{
+    padding-bottom: 50px;
+}
+/* 
+    1. Navigation section.
+    2. Home banner section.
+    3. Home services section .
+    4. Home frequently asked questions section.
+    5. Article section.
+ */
+
+
+ /* 1. Navigation section starts. */
+ .navigation{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    flex-wrap: wrap;
+ }
+ .navigation-main{
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: +9999;
+ }
+ .nav-links, .nav-section{
+    display: flex;
+    gap: 20px;
+ }
+ .nav-contact{
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+ }
+ .nav-contact p a{
+    color: var(--first-color-);
+ }
+ .nav-links a:hover{
+    color: var(--first-color-);
+ }
+ .hamburger{
+   display: none;
+ }
+ .nav-login{
+   display: flex;
+   gap: 30px;
+ }
+
+ /* 1. Navigation section ends. */
+
+ /* 2. Banners section starts.  */
+ .banner-section{
+    background-image: url("/assets/images/home-banner@2x.png");
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+ .banner-content{
+    text-align: center;
+ }
+ .banner-title h1, .banner-title h6{
+    color: #fff;
+ } 
+ .banner-search{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0px 60px 0px;
+ }
+ .banner-location input{
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    padding-left: 50px;
+ }
+ .banner-location, .banner-hospitals{
+   position: relative;
+ }
+ .banner-location box-icon{
+   position: absolute;
+   top: 10px;
+   left: 10px;
+   cursor: pointer;
+ }
+ .banner-hospitals box-icon{
+   position: absolute;
+   right: 20px;
+   top: 3px;
+   background-color: var(--first-color-);
+   padding: 16px 20px;
+   border-radius: 4px;
+   cursor: pointer;
+ }
+.banner-hospitals input{
+    width: 500px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding-left: 20px;
+}
+.banner-search p{
+    color: #fff;
+}
+ /* 2. Banners section ends.  */
+
+ /* 3. Home services section starts.  */
+ .serv-card{
+    display: flex;
+    gap:  15px;
+    align-items: center;
+    border: 1px solid var(--second-color-);
+    padding: 10px;
+    border-radius: 4px;
+    align-items: center;
+    cursor: pointer;
+ }
+ .serv-card:hover{
+    background-color: var(--three-color-);
+ }
+ .serv-card:hover p{
+    color: #fff;
+ }
+ .serv-card:hover img{
+    filter: brightness(0) invert(1);
+ }
+ .serv-card p{
+    font-size: 12px;
+    font-weight: 600;
+ }
+ .serv-card img{
+    height: 30px;
+ }
+ /* 3. Home services section ends.  */
+
+ /*  4. Frequently asked questions section starts. */
+ .freq-section{
+    background-color: var(--three-color-);
+ }
+ .freq-section button{
+    padding: 5px 25px !important;
+    border: none;
+    border-radius: 4px;
+    margin: 30px auto;
+    display: block;
+ }
+ .freq-cards{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+ }
+ .freq-title{
+    color: var(--first-color-);
+ }
+ .freq-cards span a{
+    color: var(--first-color-);
+    font-size: 13px;
+    border-bottom: 1px solid var(--first-color-);
+ }
+ .freq-head{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 0;
+   color: #fff;
+   font-weight: 600;
+ }
+ .freq-head input{
+   width: 220px;
+   height: 36px;
+   border-radius: 4px;
+   border: none;
+   outline: none;
+   font-size: 14px;
+   font-weight: 600;
+   padding-left: 10px;
+ }
+ .freq-input, .articles-input{
+   position: relative;
+ }
+ .freq-input box-icon, .articles-input box-icon{
+   position: absolute;
+   top: 8px;
+   right: 10px;
+   cursor: pointer;
+ }
+ /*  4. Frequently asked questions section ends. */
+
+ /* 5. Scroll to top section starts. */
+ .scroll-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    background-color: #fff;
+    padding: 3px;
+    border-radius: 5px;
+    transform: scale(0);
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+ }
+ .scroll-to-top-active{
+    transform: scale(1);
+    pointer-events: auto;
+ }
+ /* 5. Scroll to top section ends. */
+
+ /* 6.Article section starts . */
+ .artical-card-image{
+    height: 160px;
+    width: 100%;
+    padding-bottom: 10px;
+ }
+ .article-card{
+    box-shadow: 0px 0px 3px 0px;
+ }
+ .article-title{
+    color: var(--first-color-);
+ }
+ .article-card button{
+    background-color: var(--second-color-);
+    border: none;
+    border-radius: 4px;
+    color: #000;
+    padding: 3px 20px;
+    margin-bottom: 10px;
+ }
+ .article-card button:hover{
+   background-color: var(--three-color-);
+ }
+ .article-card a{
+    color: #000;
+ }
+ .article-doctor{
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+ }
+ .article-doctor h6{
+    font-size: 12px;
+    font-weight: 600;
+ }
+ .articles-head{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 0;
+   color: var(--second-color-);
+   font-weight: 600;
+ }
+ .articles-head input{
+   width: 220px;
+   height: 36px;
+   border-radius: 4px;
+   outline: none;
+   border: 1px solid var(--second-color-);
+   font-size: 14px;
+   font-weight: 600;
+   padding-left: 10px;
+ }
+ .articles-button{
+   padding: 5px 24px;
+   border: 1px solid var(--three-color-);
+   border-radius: 4px;
+   margin: 39px auto;
+   display: block;
+   background-color: #fff;
+ }
+ /* 6.Article section ends . */
+
+ /* Footer section starts.  */
+ .footer-main{
+    background-color: var(--three-color-);
+    padding: 30px 0;
+ }
+ .footer-location-links{
+   gap: 20px;
+   font-size: 14px;
+ }
+ .footer-mail{
+   display: flex;
+   gap: 10px;
+   align-items: center;
+   color: #fff;
+   filter: brightness(0) invert(1);
+   padding: 5px 0;
+ }
+ .footer-media-links box-icon{
+   background-color: #fff;
+   padding: 3px;
+   border-radius: 50%;
+   margin-top: 10px;
+ }
+ .footer-title{
+   position: relative;
+   color: #fff;
+ }
+ .footer-title::after{
+   content: "";
+   position: absolute;
+   height: 1px;
+   background: var(--first-color-);
+   width: 100px;
+    bottom: -4px;
+    left: 0px;
+ }
+ .footer-main li:hover,  .footer-main li a:hover{
+   color: #fff;
+ }
+ .copy-right{
+   background-color: #0c4a8f;
+   text-align: center;
+   color: #fff;
+   padding: 10px 0;
+ }
+ .copy-right h6{
+   font-size: 14px;
+ }
+ /* Footer section ends.  */
+
