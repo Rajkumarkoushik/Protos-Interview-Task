@@ -1,0 +1,5 @@
+<svg id="Group_18111" data-name="Group 18111" xmlns="http://www.w3.org/2000/svg" width="274" height="18" viewBox="0 0 274 18">
+  <path id="Icon_material-check-box-outline-blank" data-name="Icon material-check-box-outline-blank" d="M20.5,6.5v14H6.5V6.5h14m0-2H6.5a2.006,2.006,0,0,0-2,2v14a2.006,2.006,0,0,0,2,2h14a2.006,2.006,0,0,0,2-2V6.5A2.006,2.006,0,0,0,20.5,4.5Z" transform="translate(-4.5 -4.5)" fill="#00529f"/>
+  <text id="I_have_read_agree_to_T_C_s_and_Privacy_Policy" data-name="I have read &amp; agree to T&amp;C&apos;s and Privacy Policy" transform="translate(26 14)" fill="#656565" font-size="12" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">I have read &amp; agree to </tspan><tspan y="0" fill="#00529f">T&amp;C&apos;s</tspan><tspan y="0" xml:space="preserve"> and </tspan><tspan y="0" fill="#00529f">Privacy Policy</tspan></text>
+  <path id="Icon_feather-check" data-name="Icon feather-check" d="M15.2,9,8.875,15.324,6,12.45" transform="translate(-1.5 -3.5)" fill="none" stroke="#00529f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+</svg>
